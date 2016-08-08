@@ -1,0 +1,27 @@
+This is a buildlog for the modified perseverance 3D printed item.
+
+I first tried printing the base.  It was printed in three pieces due to its height.  It took
+forever and wasted a tremendous amount of plastic for support material.  I decided to redesign
+the part to have the base be a three-piece laser cut item.  Our laser cutter (Goldfinger) is
+great at cutting 3 mm thick material.  
+
+Phase 1:
+I took measurements from the included assembly.skp to get an exact layout of the base item.
+I rounded dimensions to the nearest 0.1mm.  The base cut out very well.  An unanticipated
+side effect of the laser cut base was that the holes were oversized.  An unexpected benefit is
+that the system can be partially assembled before assembling the base.  This results in a much
+simpler assembly.
+
+In retrospect, this is obvious.  A 3D printer tends to undersize holes, while a laser cutter
+will oversize holes due to the kerf.
+
+I had to re-design the axle bearings for the gears so that they would accomodate both the 
+larger hole diameters and the smaller thickness for the base walls. Additionally, there was an 
+error in the stl file for the idle input wheel.  It was based on the axle bearing, so I redesigned
+the parts in OpenSCAD.
+
+After printing the parts, the fit was much tighter.  However, I didn't allow for proper 
+clearances between the male and female parts. With the additional forces, the small registration
+pin size became an issue.  It should be made as large as practical. A redesign was in order.
+
+
